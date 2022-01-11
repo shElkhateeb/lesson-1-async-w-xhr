@@ -16,14 +16,12 @@
             htmlContent = `<figure><img src="${firstImage.urls.regular}" alt="${searchedForText}">
             <figcaption>${searchedForText} by ${firstImage.user.name}</figcaption>
             </figure>`
-
-            //display figure on the page
-            responseContainer.insertAdjacentHTML('afterbegin', htmlContent);
         }else {
-            const errorMsge = '<p>Image not found</p>';
-            responseContainer.insertAdjacentHTML('afterbegin', errorMsge);
+            htmlContent = '<p>Image not found</p>';
         }
-        
+        //display figure on the page if image found
+        responseContainer.insertAdjacentHTML('afterbegin', htmlContent);
+
     }
 
     function addArticles() {
