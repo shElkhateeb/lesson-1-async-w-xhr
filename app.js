@@ -26,8 +26,8 @@
         
     }
 
-    function handleError() {
-        alert('error!');
+    function handleImgError() {
+        alert('faild getting image!');
     }
 
     form.addEventListener('submit', function (e) {
